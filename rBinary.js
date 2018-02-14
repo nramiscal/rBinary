@@ -16,20 +16,20 @@ function rBinary(arr, val){
     }
     else {
         if (val < num){
-            let newArr1 = [];
+            var newArr = [];
             for (var i = 0; i < idx; i++){
-                newArr1.push(arr[i]);
+                newArr.push(arr[i]);
             }
-            return rBinary(newArr1, val);
+            return rBinary(newArr, val);
         }
         else if (val > num){
-            let newArr2 = [];
-            for (var j = idx + 1; j < arr.length; j++){
-                newArr2.push(arr[j]);
+            var newArr = [];
+            for (var i = idx + 1; i < arr.length; i++){
+                newArr.push(arr[i]);
             }
-            return rBinary(newArr2,val);
+            return rBinary(newArr,val);
         }
     }
 }
 
-console.log(rBinary([1,2,3,4,5,6,7,8,9], 100));
+console.log(rBinary([1,2,3,4,5,6,7,8,9], 2));
