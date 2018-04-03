@@ -5,7 +5,7 @@ function rBinary(arr, val){
     console.log(arr);
     console.log("idx: " + idx + " num: " + num + " val: " + val);
 
-    if (arr.length === 1 && arr[0] !== val){
+    if (arr.length <= 1 && arr[0] !== val){
         console.log(val + " is not in the array.");
         return false;
     }
@@ -33,3 +33,4 @@ function rBinary(arr, val){
 }
 
 console.log(rBinary([1,2,3,4,5,6,7,8,9], 2));
+console.log(rBinary([], 90));
